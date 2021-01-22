@@ -20,6 +20,12 @@ export class HomeComponent implements OnInit {
 
 
   ngOnInit() {
+
+    // make color light
+    var body = document.getElementsByTagName('body')[0];
+    body.classList.add("white-content");
+
+
     this.getData().
       subscribe(data => {
         console.log(data);

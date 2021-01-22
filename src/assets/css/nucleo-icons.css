@@ -39,12 +39,13 @@ Created using IcoMoon - icomoon.io
 }
 
 .font-icon-detail i {
-  color: #FFFFFF;
+  color: black;
   font-size: 1.5em;
 }
 
 .font-icon-detail p {
-  color: #e44cc4 !important;
+  color: black !important;
+
   margin-top: 30px;
   padding: 0 10px;
   font-size: .7142em;
@@ -103,6 +104,7 @@ Created using IcoMoon - icomoon.io
   0% {
     -webkit-transform: rotate(0deg);
   }
+
   100% {
     -webkit-transform: rotate(360deg);
   }
@@ -112,6 +114,7 @@ Created using IcoMoon - icomoon.io
   0% {
     -moz-transform: rotate(0deg);
   }
+
   100% {
     -moz-transform: rotate(360deg);
   }
@@ -125,6 +128,7 @@ Created using IcoMoon - icomoon.io
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
   }
+
   100% {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
