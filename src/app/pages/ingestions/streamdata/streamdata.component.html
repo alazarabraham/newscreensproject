@@ -43,7 +43,24 @@
           <div class=" card">
         <div class=" card-header"><h5 class=" title">Cluster</h5></div>
         <div class=" card-body">
-            
+          <div class="row">
+            <div class="col-md-2">
+              <h4 class="text-primary mt-3">Source</h4>
+            </div>
+            <div class="col-md-2">
+              <div ngbDropdown class="btn-group">
+                <button class="btn btn-secondary" id="dropdownBasic2" ngbDropdownToggle>Kafka</button>
+                <div ngbDropdownMenu aria-labelledby="dropdownBasic2">
+                  <button ngbDropdownItem>Action - 1</button>
+                  <button ngbDropdownItem>Another Action</button>
+                  <button ngbDropdownItem>Something else is here</button>
+                  <div class="dropdown-divider"></div>
+                  <a ngbDropdownItem href="#">Separated link</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
           <form>
             <div class=" row">
               <div class=" col-md-6 pr-md-1">
@@ -78,7 +95,7 @@
           <div class=" card-footer">
             <div class="row">
               <div class="col-md-10 col-sm-8 col-8">
-                <button class="btn btn-default mr-2">Cancel</button>
+                <button class="btn btn-default mr-2" routerLink="/home">Cancel</button>
                 <button class="btn btn-success"><i class="fas fa-file"></i>  Save as Draft</button>
   
               </div>

@@ -12,28 +12,28 @@ export const ROUTES: RouteInfo[] = [
     path: "/home",
     title: "Home",
     rtlTitle: "لوحة القيادة",
-    icon: "icon-chart-pie-36",
+    icon: "fas fa-home",
     class: ""
   },
   {
     path: "/ingestions/flatfile",
     title: "Ingest Flat File",
     rtlTitle: "الرموز",
-    icon: "icon-atom",
+    icon: "fas fa-file",
     class: ""
   },
   {
     path: "/ingestions/rdbms",
     title: "Ingest RDBMS",
     rtlTitle: "خرائط",
-    icon: "icon-pin",
+    icon: "fas fa-database",
     class: ""
   },
   {
     path: "/ingestions/streamdata",
     title: "Ingest Stream data",
     rtlTitle: "ار تي ال",
-    icon: "icon-world",
+    icon: "fas fa-stream",
     class: ""
   },
   {

@@ -4,9 +4,27 @@
       <div class=" col-md-12">
         <div class=" card">
           <div class=" card-header mb-5">
-            <h3 class=" card-title">Ingestions</h3>
+            <!-- <h3 class=" card-title">Ingestions</h3> -->
           </div>
           <div class=" card-body">
+            <div class="row">
+              <div class="col-md-2">
+                <h4 class="text-primary mt-3">Ingestion Type</h4>
+              </div>
+              <div class="col-md-2">
+                <div ngbDropdown class="btn-group">
+                  <button class="btn btn-info" id="dropdownBasic2" ngbDropdownToggle>All</button>
+                  <div ngbDropdownMenu aria-labelledby="dropdownBasic2">
+                    <button ngbDropdownItem>Action - 1</button>
+                    <button ngbDropdownItem>Another Action</button>
+                    <button ngbDropdownItem>Something else is here</button>
+                    <div class="dropdown-divider"></div>
+                    <a ngbDropdownItem href="#">Separated link</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <br>
             <br>
             <br>
@@ -56,8 +74,9 @@
                       <div class=" typography-line">
                          <blockquote class=" blockquote blockquote-primary">
                             
-                            <small class="align-right">{{ingestion.name}}</small>
+                            <small>{{ingestion.name}}</small>
                             <div class="float-right"><a href=""><i class="fas fa-trash"></i></a></div>
+                            <div class="float-right mr-2"><a href=""><i class="fas fa-edit"></i></a></div>
                             <br>
   
                              <p >
@@ -99,6 +118,8 @@
                             
                             <small class="align-right">{{ingestion.name}}</small>
                             <div class="float-right"><a href=""><i class="fas fa-trash"></i></a></div>
+                            <div class="float-right mr-2"><a href=""><i class="fas fa-edit"></i></a></div>
+
                             <br>
   
                              <p >

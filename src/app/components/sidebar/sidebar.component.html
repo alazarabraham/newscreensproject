@@ -16,8 +16,7 @@
       class="{{ menuItem.class }} nav-item"
     >
       <a [routerLink]="[menuItem.path]">
-        <i class="tim-icons  {{ menuItem.icon }}"></i>
-        <p>{{ menuItem.title }}</p>
+        <p><i class="{{ menuItem.icon }} mr-4" ></i>{{ menuItem.title }}</p>
       </a>
     </li>
   </ul>
