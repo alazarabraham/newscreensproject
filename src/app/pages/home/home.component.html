@@ -1,0 +1,264 @@
+
+<div class=" content">
+    <div class=" row">
+      <div class=" col-md-12">
+        <div class=" card">
+          <div class=" card-header mb-5">
+            <h3 class=" card-title">Ingestions</h3>
+          </div>
+          <div class=" card-body">
+            <br>
+            <br>
+            <br>
+            <ul class="nav nav-pills nav-pills-primary justify-content-center" role="tablist">
+              <li class="nav-item">
+                  <a class="nav-link active" data-toggle="tab" href="#link1" role="tablist" aria-expanded="true">
+                      In Progress
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#link2" role="tablist" aria-expanded="false">
+                      Pending
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#link3" role="tablist" aria-expanded="false">
+                      Paused
+                  </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#link2" role="tablist" aria-expanded="false">
+                    Error
+                </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#link3" role="tablist" aria-expanded="false">
+                      Completed
+                  </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#link3" role="tablist" aria-expanded="false">
+                    Drafts
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#link3" role="tablist" aria-expanded="false">
+                    Discarded
+                </a>
+              </li>
+          </ul>
+          <div class="tab-content tab-space">
+              <div class="tab-pane active" id="link1" aria-expanded="true">
+                <!-- CARDS -->
+                <br>
+                <div class="row">
+                  <div class=" col-md-4" *ngFor="let ingestion of ingestionArray; let i = index;">
+                      <div class=" typography-line">
+                         <blockquote class=" blockquote blockquote-primary">
+                            
+                            <small class="align-right">{{ingestion.name}}</small>
+                            <div class="float-right"><a href=""><i class="fas fa-trash"></i></a></div>
+                            <br>
+  
+                             <p >
+  
+                              Lorem ipsum dolor sit amet, consectetuer adipiscing elit <br />
+             
+                             <br />
+  
+             
+                             </p>
+                             <div class="row">
+                                 <div class="col-md-6">
+                                      <div class="float-left"><small>RDBMS</small></div>
+                                 </div>
+                                 <div class="col-md-6">
+                                      <div class="float-right"><small>Todays date</small></div>
+                                 </div>
+                             </div>
+                                  <div class="progress">
+                                      <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                  <a href="#" class="card-link">View Details  <i class="fas fa-chevron-right"></i></a>
+  
+                                  <!-- <div class="float-right"><small><a href=""><i class="fas fa-pause"></i></a></small></div> -->
+  
+                             
+                             
+                         </blockquote>
+                     </div>
+                 </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="link2" aria-expanded="false">
+                <br>
+                <div class="row">
+                  <div class=" col-md-4" *ngFor="let ingestion of ingestionArray; let i = index;">
+                      <div class=" typography-line">
+                         <blockquote class=" blockquote blockquote-danger">
+                            
+                            <small class="align-right">{{ingestion.name}}</small>
+                            <div class="float-right"><a href=""><i class="fas fa-trash"></i></a></div>
+                            <br>
+  
+                             <p >
+  
+                              Lorem ipsum dolor sit amet, consectetuer adipiscing elit <br />
+             
+                             <br />
+  
+             
+                             </p>
+                             <div class="row">
+                                 <div class="col-md-6">
+                                      <div class="float-left"><small>RDBMS</small></div>
+                                 </div>
+                                 <div class="col-md-6">
+                                      <div class="float-right"><small>Todays date</small></div>
+                                 </div>
+                             </div>
+                                  <div class="progress">
+                                      <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                  <a href="#" class="card-link">View Details  <i class="fas fa-chevron-right"></i></a>
+  
+                                  <!-- <div class="float-right"><small><a href=""><i class="fas fa-pause"></i></a></small></div> -->
+  
+                             
+                             
+                         </blockquote>
+                     </div>
+                 </div>
+              </div>
+              </div>
+              <div class="tab-pane" id="link3" aria-expanded="false">
+                  Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas.
+                  <br><br>Dynamically innovate resource-leveling customer service for state of the art customer service.
+              </div>
+          </div>
+                   
+                    
+                 
+        
+             
+            
+<!--             
+
+            <div class=" typography-line">
+              <span> Muted Text </span>
+              <p class=" text-muted">
+                I will be the leader of a company that ends up being worth
+                billions of dollars, because I got the answers...
+              </p>
+            </div>
+            <div class=" typography-line">
+              <span> Primary Text </span>
+              <p class=" text-primary">
+                I will be the leader of a company that ends up being worth
+                billions of dollars, because I got the answers...
+              </p>
+            </div>
+            <div class=" typography-line">
+              <span> Info Text </span>
+              <p class=" text-info">
+                I will be the leader of a company that ends up being worth
+                billions of dollars, because I got the answers...
+              </p>
+            </div>
+            <div class=" typography-line">
+              <span> Success Text </span>
+              <p class=" text-success">
+                I will be the leader of a company that ends up being worth
+                billions of dollars, because I got the answers...
+              </p>
+            </div>
+            <div class=" typography-line">
+              <span> Warning Text </span>
+              <p class=" text-warning">
+                I will be the leader of a company that ends up being worth
+                billions of dollars, because I got the answers...
+              </p>
+            </div>
+            <div class=" typography-line">
+              <span> Danger Text </span>
+              <p class=" text-danger">
+                I will be the leader of a company that ends up being worth
+                billions of dollars, because I got the answers...
+              </p>
+            </div>
+            <div class=" typography-line">
+              <h2>
+                <span> Small Tag </span> Header with small subtitle <br />
+  
+                <small> Use "small" tag for the headers </small>
+              </h2>
+            </div>
+            <div class=" typography-line">
+              <span> Lists </span>
+              <div class=" row">
+                <div class=" col-md-3">
+                  <h5>Unordered List</h5>
+                  <ul>
+                    <li>List Item</li>
+                    <li>List Item</li>
+                    <li class=" list-unstyled">
+                      <ul>
+                        <li>List Item</li>
+                        <li>List Item</li>
+                        <li>List Item</li>
+                      </ul>
+                    </li>
+                    <li>List Item</li>
+                  </ul>
+                </div>
+                <div class=" col-md-3">
+                  <h5>Ordered List</h5>
+                  <ol>
+                    <li>List Item</li>
+                    <li>List Item</li>
+                    <li>List item</li>
+                    <li>List Item</li>
+                  </ol>
+                </div>
+                <div class=" col-md-3">
+                  <h5>Unstyled List</h5>
+                  <ul class=" list-unstyled">
+                    <li>List Item</li>
+                    <li>List Item</li>
+                    <li>List item</li>
+                    <li>List Item</li>
+                  </ul>
+                </div>
+                <div class=" col-md-3">
+                  <h5>Inline List</h5>
+                  <ul class=" list-inline">
+                    <li class=" list-inline-item">List1</li>
+                    <li class=" list-inline-item">List2</li>
+                    <li class=" list-inline-item">List3</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class=" typography-line">
+              <span> Code </span>
+              <p>
+                This is <code> .css-class-as-code </code> , an example of an
+                inline code element. Wrap inline code within a
+                <code> <code>...</code> </code> tag.
+              </p>
+              <pre>
+  1. #This is an example of preformatted text.<br>
+  
+  2. #Here is another line of code
+  </pre>
+            </div> -->
+        
+        <br>
+        <br>
+        <br><br><br><br><br><br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
