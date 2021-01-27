@@ -14,12 +14,6 @@ export const ROUTES: RouteInfo[] = [
     class: ""
   },
   {
-    path: "/ingestions/flatfile",
-    title: "Ingest Flat File",
-    icon: "fas fa-file",
-    class: ""
-  },
-  {
     path: "/ingestions/rdbms",
     title: "Ingest RDBMS",
     icon: "fas fa-database",
@@ -29,6 +23,12 @@ export const ROUTES: RouteInfo[] = [
     path: "/ingestions/streamdata",
     title: "Ingest Stream data",
     icon: "fas fa-stream",
+    class: ""
+  },
+  {
+    path: "/ingestions/flatfile",
+    title: "Ingest Flat File",
+    icon: "fas fa-file",
     class: ""
   },
   // {

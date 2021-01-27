@@ -19,18 +19,38 @@
                           <p>Source data</p>
                       </div>
                       <div class=" col-md-1 col-sm-1 col-1">
-                          <span style="font-size: 150%; color:blue;"><i class="fas fa-arrow-right"></i></span>
+                          <span class="text-primary" style="font-size: 150%;"><i class="fas fa-arrow-right"></i></span>
                       </div>
                       <div class=" col-md-2 col-sm-2 col-3">
                           <span class="text-light" style="font-size: 250%;">②</span>
                           <p>Configure Ingestion</p>
                       </div>
                       <div class=" col-md-1 col-sm-1 col-1">
-                          <span style="font-size: 150%; color:blue;"><i class="fas fa-arrow-right"></i></span>
+                          <span class="text-primary" style="font-size: 150%;"><i class="fas fa-arrow-right"></i></span>
                       </div>
                       <div class=" col-md-2 col-sm-2 col-3">
                           <span class="text-light" style="font-size: 250%;">③</span>
                           <p>Filter Table</p>
+                      </div>
+                    </div>
+                    
+                    
+                  </div>
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                  <div class="col-md-6">
+                    <h4 class="text-primary mt-3 mr-4" style="display: inline-block">Source</h4>
+                 
+                    <div ngbDropdown class="btn-group">
+                      <button class="btn btn-info " id="dropdownBasic2" ngbDropdownToggle>Kafka  <i class="fas fa-chevron-down"></i></button>
+                      <div ngbDropdownMenu aria-labelledby="dropdownBasic2">
+                        <button ngbDropdownItem>Action - 1</button>
+                        <button ngbDropdownItem>Another Action</button>
+                        <button ngbDropdownItem>Something else is here</button>
+                        <div class="dropdown-divider"></div>
+                        <a ngbDropdownItem href="#">Separated link</a>
                       </div>
                     </div>
                   </div>
@@ -46,23 +66,7 @@
           <h5 class=" title">Cluster</h5>
         </div>
         <div class=" card-body">
-          <div class="row">
-            <div class="col-md-2">
-              <h4 class="text-primary mt-3">Source</h4>
-            </div>
-            <div class="col-md-2">
-              <div ngbDropdown class="btn-group">
-                <button class="btn btn-info" id="dropdownBasic2" ngbDropdownToggle>Kafka</button>
-                <div ngbDropdownMenu aria-labelledby="dropdownBasic2">
-                  <button ngbDropdownItem>Action - 1</button>
-                  <button ngbDropdownItem>Another Action</button>
-                  <button ngbDropdownItem>Something else is here</button>
-                  <div class="dropdown-divider"></div>
-                  <a ngbDropdownItem href="#">Separated link</a>
-                </div>
-              </div>
-            </div>
-          </div>
+          
           <br>
           <form>
             <div class=" row">
@@ -103,7 +107,7 @@
   
               </div>
               <div class="col-md-2 col-sm-2 col-4">
-                <button class="btn btn-primary">Next</button>
+                <button class="btn btn-primary" routerLink="/ingestions/streamdata/configureIngestion">Next</button>
               </div>
             </div>
           </div>

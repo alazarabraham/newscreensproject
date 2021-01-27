@@ -9,6 +9,9 @@
                       <h2 class=" card-title">Ingest RDBMS</h2>
                     </div>
                   </div>
+
+                  <!-- STEPS  -->
+
                   <div class=" row">
                     <div class=" col-md-12 ml-auto mr-auto text-center">
                       <div class=" row d-flex justify-content-center">
@@ -58,6 +61,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
+                    
+                      <!-- SEARCH BAR -->
                         <form class="form-inline ml-auto">
                             <div class="form-group no-border">
                                 <label for="" class="mr-2 mt-2" style="display: inline-block;">Source</label>
@@ -69,80 +74,73 @@
                               <input type="text" class="form-control input-lg mt-2" placeholder="Search by database/table/column" />
                             </div>
                             
-                          </form>                    
+                        </form>                    
                     </div>
                     <div class="col-md-6">
-                       <h6  class="title mt-4">Destination</h6>     
+                       <h6  class="title mt-3">Destination</h6>     
                     </div>
                 </div>
-                <div class="row">
-                  <div class=" col-md-6" >
-                    <div class=" card">
-                      <div class=" card-header">
-                        <!-- <h4 class=" card-title">Notifications Style</h4> -->
-                      </div>
-                      <div class=" card-body">
-                        <ngb-alert [type]="'info'" [dismissible]="false">
-                          <a href=""><i class="fas fa-chevron-right mr-2"></i></a>
-                          <span><i class="fas fa-database"></i> Database 1</span>
-                        </ngb-alert>
-                        <ngb-alert [type]="'info'" [dismissible]="false">
-                          <a href=""><i class="fas fa-chevron-right mr-2"></i></a>
-                          <span><i class="fas fa-database"></i> Database 2</span>
-                        </ngb-alert>
-                        <ngb-alert [type]="'info'" [dismissible]="false">
-                          <a href=""><i class="fas fa-chevron-right mr-2"></i></a>
-                          <span><i class="fas fa-database"></i> Database 3</span>
-                        </ngb-alert>
-                        <ngb-alert [type]="'info'" [dismissible]="false">
-                          <a href=""><i class="fas fa-chevron-right mr-2"></i></a>
-                          <span><i class="fas fa-database"></i> Database 4</span>
-                        </ngb-alert>
-                        
-                      </div>
-                    </div>
+
+                 <!-- DRAGGABLE ROWS -->
+            <div class="row">
+              <div class=" col-md-6" >
+                <div class=" card">
+                  <div class=" card-header">
                   </div>
-                  <div class=" col-md-6 ml-auto mr-auto text-center" style="border-style:dashed;">
-                    <div class=" card">
-                      <div class=" card-header">
-                        <!-- <h4 class=" card-title">Notifications Style</h4> -->
-                      </div>
-                      <div class=" card-body">
-                        <h5>Drag and Drop desired</h5>
-                        <p>databases/tables/columns</p>
-                        <bold>here</bold>
-                        
-                      </div>
-                    </div>
+                  <div class=" card-body">
+                    <ngb-alert [type]="'info'" [dismissible]="false" cdkDrag>
+                      <a href=""><i class="fas fa-chevron-right mr-2"></i></a>
+                      <span><i class="fas fa-database"></i> Database 1</span>
+                    </ngb-alert>
+                    <ngb-alert [type]="'info'" [dismissible]="false">
+                      <a href=""><i class="fas fa-chevron-right mr-2"></i></a>
+                      <span><i class="fas fa-database"></i> Database 2</span>
+                    </ngb-alert>
                   </div>
                 </div>
+              </div>
+
+              <!-- DRAGGABLE BOX -->
+              <div class=" col-md-6 ml-auto mr-auto text-center" style="border-style:dashed;">
+                <div class=" card">
+                  <div class=" card-header">
+                  </div>
+                  <div class=" card-body">
+                    <h5>Drag and Drop desired</h5>
+                    <p>databases/tables/columns</p>
+                    <bold>here</bold>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+  
+                
             </div>
              
           </div>
           
           <div class=" card-body">
             
-                <div class="row">
-                   
-                   
-                  </div>
-          
-  
+           
             
               
            
           </div>
+          
           <div class=" card-footer">
             <div class="row">
               <div class="col-md-8 col-sm-8 col-8">
-                <button class="btn btn-default mr-4 " routerLink="/home">Cancel</button>
+                
+                <button class="btn btn-default mr-4 " routerLink="/home" cdkDrag>Cancel</button>
                 <button class="btn btn-success"><i class="fas fa-file"></i>  Save as Draft</button>
   
               </div>
               <div class="col-md-4 col-sm-2 col-4">
                 <button class="btn btn-primary mr-2" routerLink="/ingestions/rdbms">Previous</button>
 
-                <button class="btn btn-primary" routerLink="/ingestions/rdbms/filterRdbmsTables">Next</button>
+                <button class="btn btn-primary" routerLink="/ingestions/rdbms/filterTables">Next</button>
               </div>
             </div>
           </div>

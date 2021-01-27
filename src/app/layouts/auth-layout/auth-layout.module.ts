@@ -5,18 +5,22 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AuthLayoutRoutes } from './auth-layout.routing';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from "@angular/common/http";
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
-import { RtlComponent } from '../../pages/rtl/rtl.component';
+
 @NgModule({
   imports: [
     CommonModule,
     RouterModule.forChild(AuthLayoutRoutes),
     FormsModule,
     HttpClientModule,
-    NgbModule
+    NgbModule,
   ],
+  exports: [
+    DragDropModule
+  ],
+
   declarations: [
-    RtlComponent,
   ]
 })
 export class AuthLayoutModule { }

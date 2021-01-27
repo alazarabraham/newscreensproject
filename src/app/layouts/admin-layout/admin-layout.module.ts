@@ -5,13 +5,6 @@ import { CommonModule } from "@angular/common";
 import { FormsModule } from "@angular/forms";
 
 import { AdminLayoutRoutes } from "./admin-layout.routing";
-import { DashboardComponent } from "../../pages/dashboard/dashboard.component";
-import { IconsComponent } from "../../pages/icons/icons.component";
-import { MapComponent } from "../../pages/map/map.component";
-import { NotificationsComponent } from "../../pages/notifications/notifications.component";
-import { UserComponent } from "../../pages/user/user.component";
-import { TablesComponent } from "../../pages/tables/tables.component";
-import { TypographyComponent } from "../../pages/typography/typography.component";
 // import { RtlComponent } from "../../pages/rtl/rtl.component";
 
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
@@ -21,6 +14,10 @@ import { StreamdataComponent } from "src/app/pages/ingestions/streamdata/streamd
 import { HomeComponent } from "src/app/pages/home/home.component";
 import { ConfigurerdbmsComponent } from "src/app/pages/ingestions/rdbms/pages/configurerdbms/configurerdbms.component";
 import { FilterRdbmsTablesComponent } from "src/app/pages/ingestions/rdbms/pages/filter-rdbms-tables/filter-rdbms-tables.component";
+import { DragDropModule } from '@angular/cdk/drag-drop';
+import { ConfigureStreamIngestionComponent } from "src/app/pages/ingestions/streamdata/pages/configure-stream-ingestion/configure-stream-ingestion.component";
+import { FilterStreamTableComponent } from "src/app/pages/ingestions/streamdata/pages/filter-stream-table/filter-stream-table.component";
+
 
 @NgModule({
   imports: [
@@ -30,19 +27,20 @@ import { FilterRdbmsTablesComponent } from "src/app/pages/ingestions/rdbms/pages
     HttpClientModule,
     NgbModule,
   ],
+  exports: [
+    DragDropModule
+  ],
+
   declarations: [
-    DashboardComponent,
-    UserComponent,
-    TablesComponent,
-    IconsComponent,
-    TypographyComponent,
-    NotificationsComponent,
-    MapComponent,
     FlatfileComponent,
+
     RdbmsComponent,
     ConfigurerdbmsComponent,
     FilterRdbmsTablesComponent,
+
     StreamdataComponent,
+    ConfigureStreamIngestionComponent,
+    FilterStreamTableComponent,
     HomeComponent,
 
 
